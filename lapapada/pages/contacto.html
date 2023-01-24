@@ -41,40 +41,56 @@
             <h1> <span class="second-color">Contacto</span></h1>
         </div>
 
-        <section class="formulario">
-            <div class="formulario__mapa"> <!--- ubicacion -->
-                <h2 class="tercer-color">Nuestra ubicación:</h2>
-                <p class="tercer-color">Veni a visitarnos y descubri lo que es comer papa en serio </p>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.26483386451!2d-58.50333869829032!3d-34.615803735973955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1670966153295!5m2!1ses-419!2sar"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="content">
+            <div class="contact-wrapper animated bounceInUp">
+                <div class="contact-form">
+                    <h3>Dejanos tu consulta</h3>
+                    <form action="">
+                        <p>
+                            <label>Nombre Completo</label>
+                            <input type="text" name="Nombre Completo">
+                        </p>
+                        <p>
+                            <label>Email</label>
+                            <input type="email" name="email">
+                        </p>
+                        <p>
+                            <label>Numero celular</label>
+                            <input type="tel" name="su numero">
+                        </p>
+                        <p>
+                            <label>Asunto</label>
+                            <input type="text" name="Asunto">
+                        </p>
+                        <p class="block">
+                            <label>Mensaje</label>
+                            <textarea name="message" rows="3">Deje su mensaje</textarea>
+                        </p>
+                        <p class="block">
+                            <button>
+                                Enviar
+                            </button>
+                        </p>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <ul>
+                        <div class="formulario__mapa"> <!--- ubicacion -->
+                            <h2 class="tercer-color">Nuestra ubicación:</h2>
+                            <p class="tercer-color">Veni a visitarnos y descubri lo que es comer papa en serio </p>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.26483386451!2d-58.50333869829032!3d-34.615803735973955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1670966153295!5m2!1ses-419!2sar"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident ipsam necessitatibus
+                        repellendus?</p>
+                    <p>lapapada.lol.xd</p>
+                </div>
             </div>
-            <form action="" class="form"> <!---FORM -->
-                <div class="form__content">
-                    <label for="name">Nombre:</label>
-                    <input type="text" name="name" placeholder="ingresa tu nombre por favor...">
-                </div>
-
-                <div class="form__content">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="" placeholder="ingresa tu mail por favor...">
-                </div>
-
-                <div class=" form__content--check">
-                    <label for="newsletter">Suscribirme al newsletter</label>
-                    <input type="checkbox" name="newsletter" id="" class="check">
-                </div>
-                <div class="form__content">
-                    <label for="message">Deja tu mensaje:</label>
-                    <textarea name="message" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div class="form__btn ">
-                    <button type="reset" class="btn btn--form"> <span class="tercer-color">Resetear</span></button>
-                    <button type="submit" class="btn "><span class="tercer-color">Enviar</span></button>
-                </div>
-            </form>
-        </section>
+    
+        </div>
 
 
 

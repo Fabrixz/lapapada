@@ -259,88 +259,6 @@ nav ul {
 
 }
 
-.formulario {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 10px;
-}
-
-.formulario h2 {
-    padding: 10px;
-    font-family: bebas;
-    background-color: #282A3A;
-}
-
-.formulario p {
-    padding: 10px;
-    font-family: bebas;
-    background-color: #282A3A;
-}
-
-.form {
-    background: rgb(214, 118, 29);
-    color: #fff;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 20px;
-    margin: 20px;
-}
-
-.form__content {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-family: bebas;
-}
-
-.form__content input {
-    padding: 10px;
-    font-family: bebas;
-    background: #eee;
-    border-radius: 5px;
-}
-
-.form__content textarea {
-    resize: none;
-
-}
-
-.form__content--check {
-    display: flex;
-    font-family: bebas;
-    width: 40%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-.form__btn {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-}
-
-.btn--form {
-    background-color: rgb(149, 0, 0);
-}
-
-.form__mapa--titulo {
-    display: flex;
-    background-color: #4b260e;
-}
-
-.formulario_mapa h2 {
-    display: flex;
-    flex-direction: column;
-    background-color: #FBC252;
-}
-
-
 
 
 
@@ -401,6 +319,122 @@ footer section form button.btn {
     padding: 5px;
 }
 
+/*PRUEBA DE FORM*/
+* {
+    box-sizing: border-box;
+}
 
+body {
+    background: #181818;
+    color: #fff;
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 1.5em;
+}
 
-/*MEDIA Q*/
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.logo {
+    text-align: center;
+    font-size: 3em;
+}
+
+.logo span {
+    color: #C69749;
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    background: #222222;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #C69749;
+}
+
+.contact-form form button {
+    background:#C69749;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #944f0f;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+/* CONTACT INFO */
+.contact-info {
+    background: rgba(255, 255, 255,.3);
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+/* LARGE SIZE */
+@media(min-width: 700px) {
+    body {
+        padding: 0 4em;
+    }
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+}
